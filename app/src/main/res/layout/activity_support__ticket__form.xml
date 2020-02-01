@@ -170,6 +170,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:background="@drawable/button_round"
@@ -182,7 +183,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_below="@id/ticket_btn"
             android:gravity="center"
             android:text="© Haball | All rights reserved" />
 

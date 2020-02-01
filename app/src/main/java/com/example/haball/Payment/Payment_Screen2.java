@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,6 +25,7 @@ import com.example.haball.R;
 public class Payment_Screen2 extends AppCompatActivity {
 
 
+    private Button btn_update;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,15 @@ public class Payment_Screen2 extends AppCompatActivity {
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
         bar.setTitle("");
         RelativeLayout rl = (RelativeLayout)findViewById(R.id.banking_channel);
+
+        btn_update = findViewById(R.id.btn_update);
+        btn_update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Payment_Screen2.this, Payment_Screen3.class);
+                startActivity(i);
+            }
+        });
 
         rl.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {

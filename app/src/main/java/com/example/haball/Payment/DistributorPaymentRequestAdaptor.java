@@ -27,7 +27,7 @@ public class DistributorPaymentRequestAdaptor extends RecyclerView.Adapter<Distr
     @NonNull
     @Override
     public DistributorPaymentRequestAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view_inflate = LayoutInflater.from(mContxt).inflate(R.layout.layout_payment_ledger,parent,false);
+        View view_inflate = LayoutInflater.from(mContxt).inflate(R.layout.distributerorder_shoprecycler,parent,false);
         return new DistributorPaymentRequestAdaptor.ViewHolder(view_inflate);
     }
 

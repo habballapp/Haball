@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context=".Payment.PaymentLedger">
+    tools:context=".Payment.DistributorPaymentRequest_CriteriaSelection">
 
     <LinearLayout
         android:id="@+id/tv_proof_paymentrequest"
