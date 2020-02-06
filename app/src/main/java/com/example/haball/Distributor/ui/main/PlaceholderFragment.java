@@ -4,24 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.annotation.Nullable;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.haball.Distributor.DistributorOrdersAdapter;
 import com.example.haball.Distributor.DistributorPaymentsAdapter;
-
 import com.example.haball.R;
-import com.example.haball.Support.SupportDashboardAdapter;
-import com.example.haball.Support.Support_dashboard;
+
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -62,7 +53,6 @@ public class PlaceholderFragment extends Fragment {
         switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
             case 1: {
                 rootView = inflater.inflate(R.layout.fragment_dashboard, container, false);
-
                 break;
             }
             case 2: {

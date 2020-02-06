@@ -6,6 +6,11 @@
     <string name="tab_text_1">Dashboard</string>
     <string name="tab_text_2">Payments</string>
     <string name="tab_text_3">Orders</string>
+    <string name="tab_text_4">Invoice Details</string>
+    <string name="tab_text_5">Order Details</string>
+    <string name="tab_text_6">Product Details</string>
+    <string name="tab_text_7">Shipment Details</string>
+
     <string name="Forgot_Password">Forgot Password</string>
     <string name="Txt_Dashboard">Dashboard</string>
     <string name="Txt_Payment">Payment Options</string>
@@ -47,4 +52,7 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="title_activity_new_distributor_dashboard">NewDistributorDashboard</string>
+    <string name="title_activity_distributor_shipment__view_dashboard">
+        DistributorShipment_ViewDashboard
+    </string>
 </resources>

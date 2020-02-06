@@ -17,13 +17,7 @@
         android:background="@drawable/underline"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:text="@string/Txt_Dashboard"
-            android:textStyle="bold"
-            ></TextView>
+
 
         <TextView
             android:layout_width="wrap_content"

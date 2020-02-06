@@ -7,19 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.haball.Payment.DistributorPaymentRequestAdaptor;
+import com.example.haball.Payment.Payment_Screen1;
+import com.example.haball.R;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.haball.Payment.Payment_Screen1;
-import com.example.haball.R;
 
 
 public class Payments_Fragment extends Fragment {
 
     private PaymentsViewModel paymentsViewModel;
     private RecyclerView recyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager layoutManager;
 
     private Button create_payment;
 
@@ -37,6 +41,19 @@ public class Payments_Fragment extends Fragment {
                 startActivity(i);
             }
         });
+
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        recyclerView.setHasFixedSize(true);
+
+        // use a linear layout manager
+        layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
+
+        // specify an adapter (see also next example)
+        mAdapter = new DistributorPaymentRequestAdaptor(this,"Ghulam Rabani & Sons Traders & Distributors","1002312324251524","Invoice","PKR 50,000.00","PKR 600,000.00");
+
+        recyclerView.setAdapter(mAdapter);
         return root;
     }
 }

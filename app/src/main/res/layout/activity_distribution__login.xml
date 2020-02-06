@@ -6,19 +6,20 @@
     android:layout_height="match_parent"
     android:backgroundTintMode="src_over"
     tools:context=".Distribution_Login.Distribution_Login">
-<!--    android:isScrollContainer="false"-->
-<!--    android:background="@drawable/background_logo"-->
-<!--    android:backgroundTint="#80FFFFFF"-->
-    <ScrollView
-        android:id="@+id/sv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-        <RelativeLayout
-            android:id="@+id/rl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
+
+        <RelativeLayout
+            android:id="@+id/abc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
             <LinearLayout
                 android:id="@+id/text_ln"
                 android:layout_width="match_parent"
@@ -103,7 +104,7 @@
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
-                        android:textSize="15sp" />
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/txt_password"
@@ -209,19 +210,18 @@
                     android:textSize="15sp" />
             </LinearLayout>
 
+                <TextView
+                    android:id="@+id/txt_logo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="© Haball | All rights reserved"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            </ScrollView>
+
         </RelativeLayout>
-
-    </ScrollView>
-
-    <TextView
-        android:id="@+id/footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:text="© Haball | All rights reserved" />
-
-
-
-
 </RelativeLayout>

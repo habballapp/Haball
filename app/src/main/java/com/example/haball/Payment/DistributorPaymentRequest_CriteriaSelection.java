@@ -34,7 +34,8 @@ public class DistributorPaymentRequest_CriteriaSelection extends AppCompatActivi
         bar.setDisplayShowCustomEnabled(true);
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FFFFFF")));
         bar.setTitle("");
-        recyclerView = (RecyclerView) findViewById(R.id.rv_payment_ledger);
+
+        recyclerView = (RecyclerView) findViewById(R.id.rv_order_ledger);
 
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
@@ -43,11 +44,12 @@ public class DistributorPaymentRequest_CriteriaSelection extends AppCompatActivi
         // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
         // specify an adapter (see also next example)
-        mAdapter = new DistributorPaymentRequestAdaptor(DistributorPaymentRequest_CriteriaSelection.this,"Ghulam Rabani & Sons Traders & Distributors","1002312324251524","Invoice","PKR 50,000.00","PKR 600,000.00");
-        mAdapter = new DistributorPaymentRequestAdaptor(DistributorPaymentRequest_CriteriaSelection.this,"Ghulam Rabani & Sons Traders & Distributors","1002312324251524","Invoice","PKR 50,000.00","PKR 600,000.00");
-        mAdapter = new DistributorPaymentRequestAdaptor(DistributorPaymentRequest_CriteriaSelection.this,"Ghulam Rabani & Sons Traders & Distributors","1002312324251524","Invoice","PKR 50,000.00","PKR 600,000.00");
+//        mAdapter = new DistributorOrderAdapter(DistributorOrder.this,"Ghulam Rabani & Sons Traders & Distributors","1002312324251524","Invoice","Pending");
         recyclerView.setAdapter(mAdapter);
+
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+
     }
 }

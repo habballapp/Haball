@@ -29,14 +29,12 @@
                 android:layout_weight="1"
                 android:text="Welcome To Distributor Portal"
                 android:textSize="20sp"
-                android:padding="10dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
+
                 android:textColor="#96bb3c"
                 android:textStyle="bold"
                 android:maxLines="1"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
 
                 />
 

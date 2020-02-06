@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="5dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/edit_text_squared"
+    android:layout_marginTop="30dp">
+
+    <LinearLayout
+        android:id="@+id/ll_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shield Company"
+            android:textSize="18sp"
+            android:layout_weight="0.5"
+            android:textColor="#000"/>
+        <ImageButton
+            android:id="@+id/menu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:background="@null"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/shipment_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_heading"
+        android:layout_marginTop="10dp"
+        android:text="Shipment No:"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/shipment_no_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_heading"
+        android:layout_marginTop="10dp"
+        android:text="51247895354254780369"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/shipment_no"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_no"
+        android:text="Company: "
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipment_no"
+        android:text="Shield"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_company"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/delivery_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_company"
+        android:text="Delivery Date: "
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_value"
+        android:text="06-01-2020"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_company"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delivery_date"
+        android:text="Quantity : "
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:text="100"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_company"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_quantity"
+        android:text="Status : "
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/tv_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_price"
+        android:text="Recieved"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_status"
+        android:textColor="#96bb3c"/>
+
+
+</RelativeLayout>

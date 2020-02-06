@@ -1,6 +1,5 @@
 package com.example.haball.Order;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +47,7 @@ public class DistributorOrderAdapter extends RecyclerView.Adapter<DistributorOrd
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView tv_heading,order_no_value,amount_value,status_value;
+        public TextView tv_heading,order_no_value,amount_value,status_value,tv_price;
         public ImageButton menu_btn;
 
         public ViewHolder(@NonNull View itemView) {

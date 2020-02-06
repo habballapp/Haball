@@ -35,9 +35,7 @@
                     android:layout_marginRight="40dp"
                     android:layout_weight="1"
                     android:maxLines="1"
-                    android:padding="10dp"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="10dp"
+
                     android:text="Welcome To Distributor Portal"
                     android:textColor="#96bb3c"
                     android:textSize="20sp"
@@ -51,7 +49,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="40dp"
+                    android:paddingLeft="10dp"
                     android:layout_weight="1"
                     android:justificationMode="inter_word"
                     android:text="@string/Txt_Description"
@@ -191,7 +190,6 @@
                         android:background="@drawable/edit_round"
                         android:gravity="left"
                         android:hint="Postal Code *"
-                        android:padding="10dp"
                         android:textSize="16sp" />
 
                 </RelativeLayout>

@@ -7,16 +7,17 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.haball.Distributor.ui.payments.Payments_Fragment;
 import com.example.haball.R;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class DistributorPaymentRequestAdaptor extends RecyclerView.Adapter<DistributorPaymentRequestAdaptor.ViewHolder> {
-    private Context mContxt;
+    private Payments_Fragment mContext;
     private String heading, ledgerid, doctype, transaction, balance;
-    public DistributorPaymentRequestAdaptor(DistributorPaymentRequest_CriteriaSelection requestLedger, String heading, String ledgerid, String doctype, String transaction, String balance) {
-        this.mContxt = requestLedger;
+    public DistributorPaymentRequestAdaptor(Payments_Fragment requestLedger, String heading, String ledgerid, String doctype, String transaction, String balance) {
+        this.mContext = requestLedger;
         this.heading = heading;
         this.ledgerid = ledgerid;
         this.doctype = doctype;
@@ -27,7 +28,8 @@ public class DistributorPaymentRequestAdaptor extends RecyclerView.Adapter<Distr
     @NonNull
     @Override
     public DistributorPaymentRequestAdaptor.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view_inflate = LayoutInflater.from(mContxt).inflate(R.layout.distributerorder_shoprecycler,parent,false);
+        //View view_inflate = LayoutInflater.from(mContxt).inflate(R.layout.distributerorder_shoprecycler,parent,false);
+        View view_inflate = LayoutInflater.from(mContext.getContext()).inflate(R.layout.layout_payment_ledger,parent,false);
         return new DistributorPaymentRequestAdaptor.ViewHolder(view_inflate);
     }
 
