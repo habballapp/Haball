@@ -41,10 +41,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Welcome to Haball Support Center"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"
                 android:textSize="20sp"
+                android:gravity="center"
                 android:layout_weight="1"/>
         </LinearLayout>
 
@@ -170,7 +171,6 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="50dp"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:background="@drawable/button_round"
@@ -183,6 +183,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_below="@id/ticket_btn"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="© Haball | All rights reserved" />
 

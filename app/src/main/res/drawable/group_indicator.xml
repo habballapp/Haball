@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:state_empty="false"  android:state_expanded="true" android:drawable="@drawable/sidebarlinegrey"/>
+    <item android:state_pressed="false" android:state_expanded="false" android:state_checked="false" android:state_empty="false"  android:drawable="@drawable/sidebargreenline"/>
+    <item android:drawable="@android:color/transparent"/>
+</selector>

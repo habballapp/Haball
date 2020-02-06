@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.1"
     defaultConfig {
         applicationId "com.example.haball"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -34,6 +34,6 @@ dependencies {
     implementation "androidx.cardview:cardview:1.0.0"
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation 'androidx.core:core:1.1.0'
-    implementation 'androidx.navigation:navigation-runtime:2.2.0'
+    implementation 'com.github.nirwannursabda:expandable-navigation:0.1.2'
 
 }

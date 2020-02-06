@@ -21,8 +21,28 @@
         android:fitsSystemWindows="true"
         android:background="#fff"
         app:headerLayout="@layout/nav_header_distributor_dashboard"
-        app:menu="@menu/activity_distributor_dashboard_drawer" />
+        app:menu="@menu/activity_distributor_dashboard_drawer">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <com.techatmosphere.expandablenavigation.view.ExpandableNavigationListView
+                android:id="@+id/expandable_navigation"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@drawable/group_indicator"
+                android:scrollbars="vertical">
+            </com.techatmosphere.expandablenavigation.view.ExpandableNavigationListView>
+
+        </ScrollView>
+    </com.google.android.material.navigation.NavigationView>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
+

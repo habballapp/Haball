@@ -6,35 +6,29 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light">
-        <activity
-            android:name=".Shipment.DistributorShipment_ViewDashboard"
-            android:label="@string/title_activity_distributor_shipment__view_dashboard"
-            android:theme="@style/NoActionBar"></activity>
-        <activity android:name=".Shipment.DistributorShipment_SelectionCriteria" />
-        <activity android:name=".Shipment.DistributorShipment" />
+        android:theme="@style/Theme.AppCompat.Light"
+        android:largeHeap="true">
         <activity
             android:name=".Distributor.DistributorDashboard"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".Payment.ProofOfPaymentDashboard" />
-        <activity android:name=".Order.DistributorOrder_ItemSelection" />
-        <activity android:name=".Order.DistributorOrder" />
-        <activity android:name=".Order.DistributorOrder_OnaddtoCart" />
-        <activity android:name=".Payment.PaymentLedger" />
-        <activity android:name=".Payment.DistributorPaymentRequest_CriteriaSelection" />
+        <activity android:name=".Order.DistributorOrder_ItemSelection"/>
+        <activity android:name=".Order.DistributorOrder"/>
+        <activity android:name=".Order.DistributorOrder_OnaddtoCart"/>
+        <activity android:name=".Payment.PaymentLedger"/>
+        <activity android:name=".Payment.DistributorPaymentRequest_CriteriaSelection"/>
         <activity android:name=".Payment.Payment_Screen3" />
         <activity android:name=".Payment.Payment_Screen2" />
         <activity android:name=".Payment.Payment_Screen1" />
         <activity android:name=".Payment.Proof_Of_Payment_Form" />
-        <activity android:name=".Order.DistributorOrder_ShopSelection" />
+        <activity android:name=".Order.DistributorOrder_ShopSelection"/>
         <activity android:name=".Registration.Registration_Actvity2" />
         <activity android:name=".Registration.Registration_Activity" />
-        <activity android:name=".RetailerLogin" />
+        <activity android:name=".RetailerLogin"></activity>
         <activity android:name=".Registration.Register_Activity_2" />
-        <activity android:name=".Distribution_Login.Distribution_Login" />
+        <activity android:name=".Distribution_Login.Distribution_Login"/>
         <activity android:name=".Support.Support_Ticket_Form" />
         <activity
             android:name=".Register_Activity.Register_Activity"
@@ -47,8 +41,9 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".SplashScreen.SplashScreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustNothing">
+            android:windowSoftInputMode="adjustNothing"
+
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

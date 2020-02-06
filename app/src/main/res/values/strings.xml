@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Haball</string>
-    <string name="Txt_Description">Haball Self-Service Distributor is a one window solution to manage business transactions and enable process optimization from
+    <string name="Txt_Description_Distributer">Haball Self-Service Distributor is a one window solution to manage business transactions and enable process optimization from
+                                   ordering digitally to making payments easily</string>
+    <string name="Txt_Description_Retailer">Haball Self-Service Distributor is a one window solution to manage business transactions and enable process optimization from
                                    ordering digitally to making payments easily</string>
     <string name="title_activity_distributor__dashboard">Distributor_Dashboard</string>
     <string name="tab_text_1">Dashboard</string>

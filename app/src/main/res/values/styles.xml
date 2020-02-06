@@ -32,4 +32,9 @@
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearance44">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>
